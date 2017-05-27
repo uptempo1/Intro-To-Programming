@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class FinancialApplication {
+	public static void main (String[]args) {
+		Scanner input = new Scanner (System.in);
+		//program that reads the subtotal and the gratuity rate, then compute gratuity and total
+		
+		System.out.print("Enter the subtotal and a gratuity rate: ");
+		
+		double subtotal = input.nextDouble();
+		double gratuity = input.nextDouble();
+		
+		
+		double gratuityRate = subtotal * (gratuity / 100);
+		double finalTotal = gratuityRate + subtotal;
+		
+		System.out.println("The gratuity is " + gratuityRate + " and total is " + finalTotal);
+		
+	}
+}
