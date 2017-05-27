@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class GeometryPentagon {
+	public static void main (String[]args) {
+		Scanner input = new Scanner (System.in);
+		
+		System.out.print("Enter the side: ");
+		
+		double s = input.nextDouble();
+		
+		double area1 = (6 * Math.pow(s, 2));
+		
+		double area2 = 4 * Math.tan(Math.PI/6);
+		
+		double area = area1/ area2;
+		
+	
+		
+		System.out.println("The area of the hexagon is " + area);
+	}
+
+}
