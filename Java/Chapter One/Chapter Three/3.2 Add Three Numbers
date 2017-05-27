@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Addition {
+	public static void main (String[]args) {
+		Scanner input = new Scanner (System.in);
+		
+		int int1 = (int)(Math.random() * 10);
+		int int2 = (int)(Math.random() * 10);
+		int int3 = (int)(Math.random() * 10);
+		
+		System.out.print("What is the sum of " + int1 + " " + int2 + " " + int3 + " : ");
+		
+		int correct = int1 + int2 + int3;
+		
+		int answer = input.nextInt();
+		
+		if (answer == correct)
+			System.out.println("The answer is correct.");
+		else
+			System.out.println("The answer is incorrect.");
+		
+	}
+
+}
